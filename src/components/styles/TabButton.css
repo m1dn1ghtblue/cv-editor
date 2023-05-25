@@ -1,0 +1,17 @@
+@import './variables.css';
+
+.tab-button {
+	border: 1px solid black;
+	padding: 12px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.tab-button:hover {
+	cursor: pointer;
+}
+
+.tab-button.active {
+	background-color: teal;
+}

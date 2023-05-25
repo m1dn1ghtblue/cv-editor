@@ -3,3 +3,13 @@
 	height: 100%;
 	border: 1px solid red;
 }
+
+.editor-tab-container .tab-list {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.editor-tab-container .tab-list div {
+	flex-grow: 1;
+	width: 100%;
+}
