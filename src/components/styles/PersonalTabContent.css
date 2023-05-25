@@ -1,2 +1,57 @@
-@import './variables.css';
 @import './TabContent.css';
+
+.tab-content {
+	display: grid;
+	grid-template-columns: max-content 1fr;
+	gap: 32px;
+}
+
+.tab-content .form {
+	grid-template-columns: 1fr 1fr;
+	gap: 18px;
+	grid-template-areas:
+		'first-name last-name'
+		'title title'
+		'address address'
+		'postcode city'
+		'phone email';
+}
+
+@media screen and (max-width: 800px) {
+	.tab-content {
+		justify-items: center;
+		grid-template-columns: 1fr;
+	}
+}
+
+#first-name {
+	grid-area: first-name;
+}
+
+#last-name {
+	grid-area: last-name;
+}
+
+#title {
+	grid-area: title;
+}
+
+#address {
+	grid-area: address;
+}
+
+#postcode {
+	grid-area: postcode;
+}
+
+#city {
+	grid-area: city;
+}
+
+#phone {
+	grid-area: phone;
+}
+
+#email {
+	grid-area: email;
+}

@@ -1,0 +1,8 @@
+@import './variables.css';
+
+.photo-input {
+	width: 250px;
+	height: 320px;
+	border: 1px solid chartreuse;
+	background-color: azure;
+}
