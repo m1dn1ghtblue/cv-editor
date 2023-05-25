@@ -1,0 +1,5 @@
+.editor-tab-container {
+	width: calc(min(100%, 1200px));
+	height: 100%;
+	border: 1px solid red;
+}

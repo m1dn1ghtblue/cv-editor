@@ -1,0 +1,7 @@
+@import './variables.css';
+.preview {
+	--ratio: 1.414;
+	width: var(--preview-width);
+	height: calc((var(--preview-width)) * var(--ratio));
+	border: 1px solid blue;
+}

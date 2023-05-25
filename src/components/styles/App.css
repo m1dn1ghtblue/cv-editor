@@ -1,0 +1,16 @@
+.App {
+	padding: 46px;
+	text-align: center;
+	display: grid;
+	grid-template-columns: 1fr max-content;
+	gap: 48px;
+	justify-items: center;
+}
+
+@media screen and (max-width: 1700px) {
+	.App {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
