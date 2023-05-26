@@ -1,2 +1,8 @@
 @import './variables.css';
 @import './TabContent.css';
+
+.summary-input {
+	width: 70%;
+	max-width: 100%;
+	min-height: 256px;
+}

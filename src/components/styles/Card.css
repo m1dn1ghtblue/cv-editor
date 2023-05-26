@@ -1,6 +1,7 @@
 @import './variables.css';
 
 .card {
+	/* change to grid */
 	display: flex;
 	flex-direction: column;
 }
