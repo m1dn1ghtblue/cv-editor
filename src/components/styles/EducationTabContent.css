@@ -1,0 +1,9 @@
+@import './variables.css';
+@import './TabContent.css';
+
+.education-tab {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 36px;
+}

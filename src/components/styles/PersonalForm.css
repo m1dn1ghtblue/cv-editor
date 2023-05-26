@@ -1,0 +1,44 @@
+@import './variables.css';
+
+.personal-tab form {
+	grid-template-columns: 1fr 1fr;
+	gap: 18px;
+	grid-template-areas:
+		'first-name last-name'
+		'title title'
+		'address address'
+		'postcode city'
+		'phone email';
+}
+
+#first-name {
+	grid-area: first-name;
+}
+
+#last-name {
+	grid-area: last-name;
+}
+
+#title {
+	grid-area: title;
+}
+
+#address {
+	grid-area: address;
+}
+
+#postcode {
+	grid-area: postcode;
+}
+
+#city {
+	grid-area: city;
+}
+
+#phone {
+	grid-area: phone;
+}
+
+#email {
+	grid-area: email;
+}

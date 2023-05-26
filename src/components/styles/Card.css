@@ -1,0 +1,6 @@
+@import './variables.css';
+
+.card {
+	display: flex;
+	flex-direction: column;
+}
