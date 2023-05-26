@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './styles/EducationTabContent.css';
 import EducationForm from './EducationForm';
-import EducationCard from './EducationCard';
+import Card from './Card';
 
 class EducationTabContent extends Component {
 	state = {};
@@ -9,7 +9,7 @@ class EducationTabContent extends Component {
 		return (
 			<div className="tab-content education-tab">
 				<EducationForm />
-				<EducationCard
+				<Card
 					organisation="university"
 					location="city"
 					title="bachelor of science"

@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
-class EducationCard extends Component {
+class Card extends Component {
 	state = {};
 
 	render() {
-		const { title, dateStart, dateEnd, organisation, location } = this.props;
+		const { title, dateStart, dateEnd, organisation, location, onDelete = () => {} } = this.props;
 		return (
 			<div className="card">
 				<h3>{title}</h3>
@@ -14,9 +14,11 @@ class EducationCard extends Component {
 				<p>
 					{dateStart} - {dateEnd}
 				</p>
+
+				<button onClick={() => onDelete()}>delete</button>
 			</div>
 		);
 	}
 }
 
-export default EducationCard;
+export default Card;
