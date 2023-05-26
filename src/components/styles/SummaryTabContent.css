@@ -2,7 +2,7 @@
 @import './TabContent.css';
 
 .summary-input {
-	width: 70%;
+	width: calc(max(70%, 300px));
 	max-width: 100%;
-	min-height: 256px;
+	min-height: 200px;
 }
