@@ -1,6 +1,6 @@
 @import './variables.css';
 
-.education-tab form {
+form.education-form {
 	margin-bottom: 36px;
 
 	display: grid;
@@ -8,17 +8,21 @@
 	grid-template-areas:
 		'name name location location'
 		'qualification qualification field-of-study field-of-study'
-		'date-start date-end currently add-btn';
+		'date-start date-end add-btn add-btn';
 }
 
 @media screen and (max-width: 800px) {
-	.education-tab form {
+	form.education-form {
 		grid-template-columns: 1fr;
 		grid-template-areas:
 			'name'
 			'location'
-			'qualification' 'field-of-study' 'date-start' 'date-end' 'currently' 'add-btn';
+			'qualification' 'field-of-study' 'date-start' 'date-end' 'add-btn';
 	}
+}
+
+#currently {
+	flex-direction: row;
 }
 
 #school-name {
@@ -43,13 +47,6 @@
 
 #school-end-date {
 	grid-area: date-end;
-}
-
-#school-currently {
-	grid-area: currently;
-	flex-direction: row;
-	align-items: center;
-	justify-content: flex-start;
 }
 
 #add-school-btn {

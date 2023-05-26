@@ -5,7 +5,7 @@ class EducationForm extends Component {
 	state = {};
 	render() {
 		return (
-			<form>
+			<form className="education-form">
 				<label htmlFor="school-name-input" id="school-name">
 					School name
 					<input id="school-name-input"></input>
@@ -39,10 +39,11 @@ class EducationForm extends Component {
 				<label htmlFor="school-end-date-input" id="school-end-date">
 					Graduation end date
 					<input id="school-end-date-input" type="date"></input>
+					<label htmlFor="school-currently-checkbox" id="currently">
+						<input id="school-currently-checkbox" type="checkbox"></input>I currently attend here
+					</label>
 				</label>
-				<label htmlFor="school-currently-checkbox" id="school-currently">
-					<input id="school-currently-checkbox" type="checkbox"></input>I currently attend here
-				</label>
+
 				<button id="add-school-btn">Add</button>
 			</form>
 		);
