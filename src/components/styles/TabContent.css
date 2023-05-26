@@ -13,8 +13,6 @@
 }
 
 .tab-content form button {
-	align-self: center;
-	justify-self: center;
 	border: 1px solid black;
 	background-color: aquamarine;
 	height: 2rem;
@@ -38,6 +36,7 @@
 .tab-content form label label {
 	flex-direction: row;
 }
+
 .tab-content form label input {
 	border: 1px solid black;
 	background-color: aliceblue;

@@ -8,8 +8,9 @@ form.work-form {
 		'. . add-btn add-btn';
 }
 
-button {
+form.work-form button {
 	grid-area: add-btn;
+	justify-self: center;
 }
 
 #work-title {

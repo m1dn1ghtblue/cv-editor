@@ -1,0 +1,12 @@
+@import './variables.css';
+
+.skill-card {
+	width: 100%;
+	padding: 12px 24px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.skill-card span {
+	text-transform: uppercase;
+}

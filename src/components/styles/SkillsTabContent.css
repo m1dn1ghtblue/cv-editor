@@ -1,2 +1,15 @@
 @import './variables.css';
 @import './TabContent.css';
+
+.skills-tab {
+	display: grid;
+	grid-template-columns: 2fr 3fr;
+	gap: 32px;
+}
+
+.skills-tab .skill-list {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
