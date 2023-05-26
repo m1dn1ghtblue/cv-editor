@@ -4,7 +4,7 @@ import './styles/PersonalForm.css';
 class PersonalForm extends Component {
 	render() {
 		return (
-			<form>
+			<form className="personal-form">
 				<label htmlFor="first-name-input" id="first-name">
 					First Name
 					<input id="first-name-input"></input>

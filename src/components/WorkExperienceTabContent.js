@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
-import './styles/TabContent.css';
+import './styles/WorkExperienceTabContent.css';
+import WorkExperienceForm from './WorkExperienceForm';
 
 class WorkExperienceTabContent extends Component {
 	state = {};
 	render() {
-		return <div className="tab-content">Work experience editor</div>;
+		return (
+			<div className="tab-content">
+				<WorkExperienceForm />
+			</div>
+		);
 	}
 }
 

@@ -1,0 +1,33 @@
+@import './variables.css';
+
+form.work-form {
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	grid-template-areas:
+		'title title employer employer'
+		'location location start-date end-date'
+		'. . add-btn add-btn';
+}
+
+button {
+	grid-area: add-btn;
+}
+
+#work-title {
+	grid-area: title;
+}
+
+#work-employer {
+	grid-area: employer;
+}
+
+#work-location {
+	grid-area: location;
+}
+
+#work-start-date {
+	grid-area: start-date;
+}
+
+#work-end-date {
+	grid-area: end-date;
+}

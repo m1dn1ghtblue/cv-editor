@@ -4,11 +4,12 @@ form.education-form {
 	margin-bottom: 36px;
 
 	display: grid;
-	grid-template-columns: repeat(4, minmax(0, 1fr));
+	grid-template-columns: repeat(2, minmax(0, 1fr));
 	grid-template-areas:
-		'name name location location'
-		'qualification qualification field-of-study field-of-study'
-		'date-start date-end add-btn add-btn';
+		'name location'
+		'qualification field-of-study'
+		'date-start date-end'
+		'. add-btn';
 }
 
 @media screen and (max-width: 800px) {
@@ -21,8 +22,8 @@ form.education-form {
 	}
 }
 
-#currently {
-	flex-direction: row;
+button {
+	grid-area: add-btn;
 }
 
 #school-name {
@@ -47,8 +48,4 @@ form.education-form {
 
 #school-end-date {
 	grid-area: date-end;
-}
-
-#add-school-btn {
-	grid-area: add-btn;
 }

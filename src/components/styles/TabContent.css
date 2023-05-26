@@ -8,6 +8,7 @@
 	display: grid;
 	gap: 32px;
 	grid-auto-rows: max-content;
+	grid-auto-columns: 1fr;
 	align-items: start;
 }
 
@@ -17,7 +18,7 @@
 	border: 1px solid black;
 	background-color: aquamarine;
 	height: 2rem;
-	width: 50%;
+	width: 200px;
 }
 
 .tab-content form button:hover {
@@ -34,6 +35,9 @@
 	align-items: flex-start;
 }
 
+.tab-content form label label {
+	flex-direction: row;
+}
 .tab-content form label input {
 	border: 1px solid black;
 	background-color: aliceblue;

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './styles/TabContent.css';
+import './styles/SummaryTabContent.css';
 
 class SummaryTabContent extends Component {
 	state = {};

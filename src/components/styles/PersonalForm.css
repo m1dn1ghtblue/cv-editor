@@ -1,8 +1,7 @@
 @import './variables.css';
 
-.personal-tab form {
+form.personal-form {
 	grid-template-columns: 1fr 1fr;
-	gap: 18px;
 	grid-template-areas:
 		'first-name last-name'
 		'title title'
