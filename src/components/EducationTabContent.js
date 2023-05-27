@@ -1,22 +1,14 @@
 import React, { useContext } from 'react';
 import './styles/EducationTabContent.css';
 import EducationForm from './EducationForm';
-import Card from './Card';
+import EducationCard from './EducationCard';
 import CVContext from '../CVContext';
 
 function EducationTabContent() {
 	const { education } = useContext(CVContext);
 
 	const cards = education.map((element) => (
-		<Card
-			key={element.id}
-			title={element.quailification}
-			startDate={element.startDate}
-			endDate={element.endDate}
-			organisation={element.schoolName}
-			location={element.location}
-			onDelete={() => {}}
-		></Card>
+		<EducationCard key={element.id} education={element} onDelete={() => {}}></EducationCard>
 	));
 
 	return (
