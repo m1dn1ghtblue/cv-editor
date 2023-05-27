@@ -9,19 +9,17 @@ import SummaryTabContent from './SummaryTabContent';
 
 function EditorTabContainer() {
 	const [activeTab, setActiveTab] = useState(0);
-	const [activeContent, setActiveContent] = useState(PersonalTabContent);
 
 	const tabs = [
-		{ id: 0, name: 'Pesonal data', content: PersonalTabContent },
-		{ id: 1, name: 'Education', content: EducationTabContent },
-		{ id: 2, name: 'Work experience', content: WorkExperienceTabContent },
-		{ id: 3, name: 'Skills', content: SkillsTabContent },
-		{ id: 4, name: 'Summary', content: SummaryTabContent },
+		{ id: 0, name: 'Pesonal data' },
+		{ id: 1, name: 'Education' },
+		{ id: 2, name: 'Work experience' },
+		{ id: 3, name: 'Skills' },
+		{ id: 4, name: 'Summary' },
 	];
 
-	const onTabButtonClick = (buttonId, content) => {
-		setActiveTab(buttonId);
-		setActiveContent(content);
+	const onTabButtonClick = (id, content) => {
+		setActiveTab(id);
 	};
 
 	return (
@@ -32,11 +30,15 @@ function EditorTabContainer() {
 						key={tab.id}
 						title={tab.name}
 						active={tab.id === activeTab}
-						onclick={() => onTabButtonClick(tab.id, tab.content)}
+						onclick={() => onTabButtonClick(tab.id)}
 					/>
 				))}
 			</div>
-			{activeContent}
+			{activeTab === 0 && <PersonalTabContent />}
+			{activeTab === 1 && <EducationTabContent />}
+			{activeTab === 2 && <WorkExperienceTabContent />}
+			{activeTab === 3 && <SkillsTabContent />}
+			{activeTab === 4 && <SummaryTabContent />}
 		</div>
 	);
 }
