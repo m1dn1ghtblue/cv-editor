@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Card({ title, dateStart, dateEnd, organisation, location, onDelete }) {
+function Card({ title, startDate, endDate, organisation, location, onDelete }) {
 	return (
 		<div className="card">
 			<h3>{title}</h3>
@@ -8,7 +8,7 @@ function Card({ title, dateStart, dateEnd, organisation, location, onDelete }) {
 				{organisation}, {location}
 			</h4>
 			<p>
-				{dateStart} - {dateEnd}
+				{startDate} - {endDate}
 			</p>
 
 			<button onClick={() => onDelete()}>delete</button>
