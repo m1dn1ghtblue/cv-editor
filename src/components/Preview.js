@@ -1,19 +1,19 @@
-import React, { Component } from 'react';
+import React, { useContext } from 'react';
 import './styles/Preview.css';
+import CVContext from '../CVContext';
 
-class Preview extends Component {
-	state = {};
-	render() {
-		const { cv } = this.props;
-		const items = flattenObj(cv, null).map(([propName, val]) => {
-			return (
-				<p key={propName}>
-					<i>{propName}:</i> {val}
-				</p>
-			);
-		});
-		return <div className="preview">{items}</div>;
-	}
+function Preview() {
+	const cv = useContext(CVContext);
+
+	const items = flattenObj(cv, null).map(([propName, val]) => {
+		return (
+			<p key={propName}>
+				<i>{propName}:</i> {val}
+			</p>
+		);
+	});
+
+	return <div className="preview">{items}</div>;
 }
 
 export default Preview;
