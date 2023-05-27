@@ -1,7 +1,8 @@
 export default class Personal {
 	constructor() {
-		this.firstName = 'firstName';
-		this.lastName = 'lastName';
+		this.firstName = '';
+		this.lastName = '';
+		this.title = '';
 		this.address = '';
 		this.postcode = '';
 		this.city = '';
