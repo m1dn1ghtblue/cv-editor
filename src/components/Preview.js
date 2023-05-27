@@ -4,8 +4,28 @@ import './styles/Preview.css';
 class Preview extends Component {
 	state = {};
 	render() {
-		return <div className="preview"></div>;
+		const { cv } = this.props;
+		const items = flattenObj(cv, null).map(([propName, val]) => {
+			return (
+				<p key={propName}>
+					<i>{propName}:</i> {val}
+				</p>
+			);
+		});
+		return <div className="preview">{items}</div>;
 	}
 }
 
 export default Preview;
+
+function flattenObj(obj, parent, res = []) {
+	for (let key in obj) {
+		let propName = parent ? parent + '_' + key : key;
+		if (typeof obj[key] == 'object') {
+			flattenObj(obj[key], propName, res);
+		} else {
+			res.push([propName, obj[key]]);
+		}
+	}
+	return res;
+}
