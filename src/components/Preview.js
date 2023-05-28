@@ -15,9 +15,9 @@ function Preview() {
 			))}
 
 			<h3>Education</h3>
-			{education.map((e) =>
+			{Array.from(education).map((e) =>
 				Object.keys(e).map((key) => (
-					<p key={`education_previewkey_${e.id}${key}`}>
+					<p key={`education_previewkey_${key}`}>
 						{key.toString()}: {e[key].toString()}
 					</p>
 				))

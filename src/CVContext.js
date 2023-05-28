@@ -11,8 +11,17 @@ function CVProvider({ children }) {
 	const [summary, setSummary] = useState('');
 
 	function addEducation(newEducation) {
-		setEducation([...education, newEducation]);
+		const index = education.findIndex((e) => e.id === newEducation.id);
+		const newArray = [...education];
+
+		if (index === -1) {
+			newArray.push(newEducation);
+		} else {
+			newArray[index] = newEducation;
+		}
+		setEducation(newArray);
 	}
+
 	function deleteEducation(id) {
 		setEducation(education.filter((e) => e.id !== id));
 	}
