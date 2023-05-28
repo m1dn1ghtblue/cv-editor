@@ -42,7 +42,7 @@ function EducationForm({ currentEducation, setCurrentEducation }) {
 				<input
 					id="school-qualification-input"
 					list="qualification-list"
-					value={currentEducation.quailification}
+					value={currentEducation.qualification}
 					onChange={(e) => onChange('qualification', e.target.value)}
 				></input>
 				<datalist id="qualification-list">
