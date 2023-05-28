@@ -4,7 +4,7 @@ import CVContext from '../CVContext';
 import Education from '../CVdata/Education';
 
 function EducationForm() {
-	const { education, setEducation } = useContext(CVContext);
+	const { addEducation } = useContext(CVContext);
 	const [currentEducation, setCurrentEducation] = useState(new Education());
 
 	const onButtonClick = (e) => {
@@ -13,13 +13,7 @@ function EducationForm() {
 		setCurrentEducation(new Education());
 	};
 
-	const addEducation = (element) => {
-		setEducation([...education, element]);
-	};
-
 	const onChange = (key, value) => {
-		console.log(`setting ${key} to ${value}`);
-
 		setCurrentEducation({
 			...currentEducation,
 			[`${key}`]: value,

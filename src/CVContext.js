@@ -10,15 +10,39 @@ function CVProvider({ children }) {
 	const [skills, setSkills] = useState([]);
 	const [summary, setSummary] = useState('');
 
+	function addEducation(newEducation) {
+		setEducation([...education, newEducation]);
+	}
+	function deleteEducation(id) {
+		setEducation(education.filter((e) => e.id !== id));
+	}
+
+	function addWork(newWork) {
+		setWork([...work, newWork]);
+	}
+	function deleteWork(id) {
+		setWork(work.filter((e) => e.id !== id));
+	}
+
+	function addSkill(newSkill) {
+		setSkills([...skills, newSkill]);
+	}
+	function deleteSkill(id) {
+		setSkills(skills.filter((e) => e.id !== id));
+	}
+
 	const provider = {
 		personal,
 		setPersonal,
 		education,
-		setEducation,
+		addEducation,
+		deleteEducation,
 		work,
-		setWork,
+		addWork,
+		deleteWork,
 		skills,
-		setSkills,
+		addSkill,
+		deleteSkill,
 		summary,
 		setSummary,
 	};
