@@ -10,16 +10,19 @@ function CVProvider({ children }) {
 	const [skills, setSkills] = useState([]);
 	const [summary, setSummary] = useState('');
 
-	function addEducation(newEducation) {
-		const index = education.findIndex((e) => e.id === newEducation.id);
-		const newArray = [...education];
-
+	function addElement(array, element) {
+		const index = array.findIndex((e) => e.id === element.id);
+		const newArray = [...array];
 		if (index === -1) {
-			newArray.push(newEducation);
+			newArray.push(element);
 		} else {
-			newArray[index] = newEducation;
+			newArray[index] = element;
 		}
-		setEducation(newArray);
+		return newArray;
+	}
+
+	function addEducation(newEducation) {
+		setEducation(addElement(education, newEducation));
 	}
 
 	function deleteEducation(id) {
@@ -27,14 +30,14 @@ function CVProvider({ children }) {
 	}
 
 	function addWork(newWork) {
-		setWork([...work, newWork]);
+		setWork(addElement(work, newWork));
 	}
 	function deleteWork(id) {
 		setWork(work.filter((e) => e.id !== id));
 	}
 
 	function addSkill(newSkill) {
-		setSkills([...skills, newSkill]);
+		setSkills(addElement(skills, newSkill));
 	}
 	function deleteSkill(id) {
 		setSkills(skills.filter((e) => e.id !== id));
