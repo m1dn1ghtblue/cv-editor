@@ -9,7 +9,7 @@ function Preview() {
 		<div className="preview">
 			<h3>Personal</h3>
 			{Object.keys(personal).map((key) => (
-				<p key={key}>
+				<p key={`personal_previewKey_${key}`}>
 					{key}: {personal[key]}
 				</p>
 			))}
@@ -17,7 +17,7 @@ function Preview() {
 			<h3>Education</h3>
 			{education.map((e) =>
 				Object.keys(e).map((key) => (
-					<p key={e.id}>
+					<p key={`education_previewkey_${e.id}${key}`}>
 						{key.toString()}: {e[key].toString()}
 					</p>
 				))

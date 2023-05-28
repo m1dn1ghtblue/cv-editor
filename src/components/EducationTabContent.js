@@ -3,12 +3,18 @@ import './styles/EducationTabContent.css';
 import EducationForm from './EducationForm';
 import EducationCard from './EducationCard';
 import CVContext from '../CVContext';
-
 function EducationTabContent() {
-	const { education } = useContext(CVContext);
+	const { education, deleteEducation } = useContext(CVContext);
 
 	const cards = education.map((element) => (
-		<EducationCard key={element.id} education={element} onDelete={() => {}}></EducationCard>
+		<EducationCard
+			// TODO rename component keys
+			key={`educationCardKey_${element.id}`}
+			education={element}
+			onDelete={() => {
+				deleteEducation(element.id);
+			}}
+		></EducationCard>
 	));
 
 	return (
