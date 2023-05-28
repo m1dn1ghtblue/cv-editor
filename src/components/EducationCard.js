@@ -4,7 +4,7 @@ import './styles/Card.css';
 export default function EducationCard({ education, onDelete, onEdit }) {
 	return (
 		<div className="education-card">
-			<h3>{education.qualififaction}</h3>
+			<h3>{education.qualification}</h3>
 			<h4>
 				{education.schoolName}, {education.location}
 			</h4>
