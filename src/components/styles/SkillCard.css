@@ -6,7 +6,3 @@
 	display: flex;
 	justify-content: space-between;
 }
-
-.skill-card span {
-	text-transform: uppercase;
-}

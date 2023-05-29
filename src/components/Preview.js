@@ -3,7 +3,7 @@ import './styles/Preview.css';
 import CVContext from '../CVContext';
 
 function Preview() {
-	const { personal, education, work /* skills, summary*/ } = useContext(CVContext);
+	const { personal, education, work, skills, summary } = useContext(CVContext);
 
 	return (
 		<div className="preview">
@@ -33,6 +33,20 @@ function Preview() {
 				>
 					{Object.keys(e).map((key) => (
 						<p key={`work_previewkey_${e.id}${key}`}>
+							{key.toString()}: {e[key].toString()}
+						</p>
+					))}
+				</div>
+			))}
+
+			<h3>Skills</h3>
+			{skills.map((e) => (
+				<div
+					key={`skill_previewkey_${e.id}`}
+					style={{ border: '1px solid teal', padding: '4px', margin: '2px' }}
+				>
+					{Object.keys(e).map((key) => (
+						<p key={`skill_previewkey_${e.id}${key}`}>
 							{key.toString()}: {e[key].toString()}
 						</p>
 					))}

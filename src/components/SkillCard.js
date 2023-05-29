@@ -1,10 +1,10 @@
 import React from 'react';
 import './styles/SkillCard.css';
 
-function SkillCard({ title, onDelete }) {
+function SkillCard({ skill, onDelete }) {
 	return (
 		<div className="skill-card">
-			<span>{title}</span>
+			<span>{skill.title}</span>
 			<button onClick={() => onDelete()}>delete</button>
 		</div>
 	);
