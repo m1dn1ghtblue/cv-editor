@@ -8,5 +8,6 @@ export default class WorkExperience {
 		this.location = '';
 		this.startDate = '';
 		this.endDate = '';
+		this.currently = false;
 	}
 }

@@ -6,7 +6,7 @@ import CVContext from '../CVContext';
 import Education from '../CVdata/Education';
 
 function EducationTabContent() {
-	const { education, deleteEducation } = useContext(CVContext);
+	const { education, deleteEducation, addEducation } = useContext(CVContext);
 	const [currentEducation, setCurrentEducation] = useState(new Education());
 
 	const cards = education.map((element) => (
@@ -25,7 +25,13 @@ function EducationTabContent() {
 
 	return (
 		<div className="tab-content education-tab">
-			<EducationForm currentEducation={currentEducation} setCurrentEducation={setCurrentEducation} />
+			<EducationForm
+				currentEducation={currentEducation}
+				setCurrentEducation={setCurrentEducation}
+				onSubmit={(education) => {
+					addEducation(education);
+				}}
+			/>
 			{cards}
 		</div>
 	);

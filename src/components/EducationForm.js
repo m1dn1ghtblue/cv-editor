@@ -1,14 +1,11 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import './styles/EducationForm.css';
-import CVContext from '../CVContext';
 import Education from '../CVdata/Education';
 
-function EducationForm({ currentEducation, setCurrentEducation }) {
-	const { addEducation } = useContext(CVContext);
-
+function EducationForm({ currentEducation, setCurrentEducation, onSubmit }) {
 	const onButtonClick = (e) => {
 		e.preventDefault();
-		addEducation(currentEducation);
+		onSubmit(currentEducation);
 		setCurrentEducation(new Education());
 	};
 

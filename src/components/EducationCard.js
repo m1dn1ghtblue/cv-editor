@@ -1,10 +1,12 @@
 import React from 'react';
-import './styles/Card.css';
+import './styles/EducationCard.css';
 
 export default function EducationCard({ education, onDelete, onEdit }) {
 	return (
 		<div className="education-card">
-			<h3>{education.qualification}</h3>
+			<h3>
+				{education.qualification} - {education.fieldOfStudy}
+			</h3>
 			<h4>
 				{education.schoolName}, {education.location}
 			</h4>

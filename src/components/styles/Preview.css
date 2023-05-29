@@ -5,4 +5,6 @@
 	width: var(--preview-width);
 	height: calc((var(--preview-width)) * var(--ratio));
 	border: 1px solid blue;
+	display: flex;
+	flex-direction: column;
 }
