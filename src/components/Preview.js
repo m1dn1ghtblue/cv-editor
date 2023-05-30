@@ -52,6 +52,9 @@ function Preview() {
 					))}
 				</div>
 			))}
+
+			<h3>Summary</h3>
+			<p>{summary}</p>
 		</div>
 	);
 }
