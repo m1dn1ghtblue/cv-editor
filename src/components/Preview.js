@@ -6,7 +6,7 @@ function Preview() {
 	const { personal, education, work, skills, summary, photoUrl } = useContext(CVContext);
 
 	return (
-		<div className="preview">
+		<div className="preview" id="CV-preview">
 			{photoUrl != null && (
 				<img
 					className="photo-preview"
