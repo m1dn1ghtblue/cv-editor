@@ -9,6 +9,7 @@ function CVProvider({ children }) {
 	const [work, setWork] = useState([]);
 	const [skills, setSkills] = useState([]);
 	const [summary, setSummary] = useState('');
+	const [photoUrl, setPhotoUrl] = useState(null);
 
 	function addElement(array, element) {
 		const index = array.findIndex((e) => e.id === element.id);
@@ -57,6 +58,8 @@ function CVProvider({ children }) {
 		deleteSkill,
 		summary,
 		setSummary,
+		photoUrl,
+		setPhotoUrl,
 	};
 
 	return <CVContext.Provider value={provider}>{children}</CVContext.Provider>;

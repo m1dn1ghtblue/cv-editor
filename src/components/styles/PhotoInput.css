@@ -6,3 +6,9 @@
 	border: 1px solid chartreuse;
 	background-color: azure;
 }
+
+.photo-preview {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}

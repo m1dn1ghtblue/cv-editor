@@ -3,10 +3,19 @@ import './styles/Preview.css';
 import CVContext from '../CVContext';
 
 function Preview() {
-	const { personal, education, work, skills, summary } = useContext(CVContext);
+	const { personal, education, work, skills, summary, photoUrl } = useContext(CVContext);
 
 	return (
 		<div className="preview">
+			{photoUrl != null && (
+				<img
+					className="photo-preview"
+					src={photoUrl}
+					alt=""
+					style={{ width: '150px', height: '200px', objectFit: 'cover', margin: '0 auto' }}
+				/>
+			)}
+
 			<h3>Personal</h3>
 			{Object.keys(personal).map((key) => (
 				<p key={`personal_previewKey_${key}`}>
