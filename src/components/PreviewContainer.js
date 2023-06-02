@@ -1,13 +1,18 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import './styles/PreviewContainer.css';
-import Preview from './Preview';
+import PreviewClassWrapper from './PreviewClassWrapper';
+import { useReactToPrint } from 'react-to-print';
 
 export default function PreviewContainer() {
-	const save = () => {};
+	const componentToPrintRef = useRef();
+	const handlePrint = useReactToPrint({
+		content: () => componentToPrintRef.current,
+	});
+
 	return (
 		<div className="preview-container">
-			<Preview />
-			<button onClick={save}>Save as pdf</button>
+			<PreviewClassWrapper ref={componentToPrintRef} />
+			<button onClick={handlePrint}>Save as pdf</button>
 		</div>
 	);
 }
