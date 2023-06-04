@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Personal from './CVdata/Personal';
+import placeholder from './placeholder.jpg';
 
 const CVContext = React.createContext();
 
@@ -9,7 +10,7 @@ function CVProvider({ children }) {
 	const [work, setWork] = useState([]);
 	const [skills, setSkills] = useState([]);
 	const [summary, setSummary] = useState('');
-	const [photoUrl, setPhotoUrl] = useState(null);
+	const [photoUrl, setPhotoUrl] = useState(placeholder);
 
 	function addElement(array, element) {
 		const index = array.findIndex((e) => e.id === element.id);

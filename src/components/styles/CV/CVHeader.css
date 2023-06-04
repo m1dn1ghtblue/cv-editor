@@ -1,0 +1,31 @@
+@media screen, print {
+	.cv-header {
+		grid-column: 2 / 3;
+		background-color: var(--color-cv-accent);
+		margin-top: 20mm;
+		max-width: calc(100% - 20mm);
+		height: 50mm;
+
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		justify-content: center;
+		padding: 0 10mm;
+		gap: 0.8rem;
+	}
+
+	.cv-header .first-name,
+	.cv-header .last-name {
+		text-transform: uppercase;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 700;
+		font-size: 32px;
+		letter-spacing: 0.1rem;
+	}
+
+	.cv-header .professional-title {
+		font-family: 'Montserrat', sans-serif;
+		font-size: 24px;
+		font-weight: 400;
+	}
+}

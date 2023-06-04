@@ -22,14 +22,13 @@ function PersonalForm() {
 					onChange={(e) => onChange('firstName', e.target.value)}
 				></input>
 			</label>
-			<label
-				htmlFor="first-name-input"
-				id="last-name"
-				value={personal.lastName}
-				onChange={(e) => onChange('lastName', e.target.value)}
-			>
+			<label htmlFor="first-name-input" id="last-name">
 				Last Name
-				<input id="last-name-input"></input>
+				<input
+					id="last-name-input"
+					value={personal.lastName}
+					onChange={(e) => onChange('lastName', e.target.value)}
+				></input>
 			</label>
 			<label htmlFor="title-input" id="title">
 				Professional Title

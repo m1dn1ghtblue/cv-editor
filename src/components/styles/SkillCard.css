@@ -1,5 +1,3 @@
-@import './variables.css';
-
 .skill-card {
 	width: calc(100% - 2 * 24px);
 	padding: 12px 24px;

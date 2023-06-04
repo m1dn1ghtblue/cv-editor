@@ -1,5 +1,3 @@
-@import './variables.css';
-
 .card {
 	/* change to grid */
 	display: flex;

@@ -1,6 +1,7 @@
+@import './colorTheme.css';
+
 .App {
 	padding: 46px;
-	text-align: center;
 	display: grid;
 	grid-template-columns: 1fr max-content;
 	gap: 48px;

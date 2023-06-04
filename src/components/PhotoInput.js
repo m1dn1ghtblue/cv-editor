@@ -4,7 +4,6 @@ import CVContext from '../CVContext';
 
 function PhotoInput() {
 	const onUpload = (file) => {
-		console.dir(file);
 		setPhotoUrl(URL.createObjectURL(file));
 	};
 
