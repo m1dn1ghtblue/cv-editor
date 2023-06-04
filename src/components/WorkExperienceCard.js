@@ -11,6 +11,7 @@ export default function WorkExperienceCard({ workExperience, onDelete, onEdit })
 			<p>
 				{workExperience.startDate} - {workExperience.currently ? 'currently' : workExperience.endDate}
 			</p>
+			<p>{workExperience.description}</p>
 			<button onClick={onDelete}>delete</button>
 			<button onClick={onEdit}>edit</button>
 		</div>

@@ -71,6 +71,14 @@ function WorkExperienceForm({ currentWork, setCurrentWork, onSubmit }) {
 					I currently work here
 				</label>
 			</label>
+			<label htmlFor="work-description-input" id="work-description">
+				Add a short description of your job here
+				<textarea
+					id="work-description-input"
+					value={currentWork.description}
+					onChange={(e) => onChange('description', e.target.value)}
+				/>
+			</label>
 			<button onClick={onButtonClick}>Submit</button>
 		</form>
 	);

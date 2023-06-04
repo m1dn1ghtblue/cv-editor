@@ -9,5 +9,6 @@ export default class WorkExperience {
 		this.startDate = '';
 		this.endDate = '';
 		this.currently = false;
+		this.description = '';
 	}
 }
