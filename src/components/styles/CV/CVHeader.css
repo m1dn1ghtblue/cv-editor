@@ -2,20 +2,19 @@
 	.cv-header {
 		grid-column: 2 / 3;
 		background-color: var(--color-cv-accent);
-		margin-top: 20mm;
+		margin-top: 21mm;
 		max-width: calc(100% - 20mm);
-		height: 50mm;
+		height: 51mm;
 
 		display: flex;
 		flex-direction: column;
 		align-items: start;
 		justify-content: center;
 		padding: 0 10mm;
-		gap: 0.8rem;
+		gap: 1rem;
 	}
 
-	.cv-header .first-name,
-	.cv-header .last-name {
+	.cv-header .name {
 		text-transform: uppercase;
 		font-family: 'Montserrat', sans-serif;
 		font-weight: 700;
