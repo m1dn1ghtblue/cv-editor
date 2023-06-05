@@ -17,8 +17,8 @@ function Preview() {
 				<CVHeader />
 				<div className="main-content">
 					{summary.length > 0 && <CVSummary text={summary} />}
-					{work.length > 0 && <CVWorkExperience workList={work} />}
 					{education.length > 0 && <CVEducation educationList={education} />}
+					{work.length > 0 && <CVWorkExperience workList={work} />}
 				</div>
 			</div>
 		</div>

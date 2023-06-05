@@ -1,16 +1,18 @@
-.contact-label {
-	display: flex;
-	flex-direction: column;
-	margin-bottom: 3mm;
-}
+@media screen, print {
+	.contact-label {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 3mm;
+	}
 
-.contact-label .contact-title {
-	font-family: 'Open Sans', sans-serif;
-	border-left: 10mm solid var(--color-cv-accent);
-	padding: 1mm 1em;
-	background-color: var(--color-cv-gray);
-}
+	.contact-label .contact-title {
+		font-family: 'Open Sans', sans-serif;
+		border-left: 10mm solid var(--color-cv-accent);
+		padding: 1mm 1em;
+		background-color: var(--color-cv-gray);
+	}
 
-.contact-label .contact-value {
-	padding: 1mm 3mm 1mm 13mm;
+	.contact-label .contact-value {
+		padding: 1mm 3mm 1mm 13mm;
+	}
 }

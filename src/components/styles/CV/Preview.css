@@ -31,7 +31,7 @@
 		content: '';
 		display: block;
 		width: 100%;
-		height: 3px;
+		height: 0.8mm;
 		background-color: var(--color-cv-accent);
 		margin: 3mm 0;
 	}

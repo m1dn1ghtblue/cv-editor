@@ -8,7 +8,7 @@ export default function CVWorkExperience({ workList }) {
 			<h3 className="cv-section-header">Work experience</h3>
 			<div className="work-list">
 				{workList.map((work) => (
-					<CVWorkCard work={work} />
+					<CVWorkCard key={`cv-card-${work.id}`} work={work} />
 				))}
 			</div>
 		</div>

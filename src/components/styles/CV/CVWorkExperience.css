@@ -1,5 +1,7 @@
-.cv-work-experience .work-list {
-	display: flex;
-	flex-direction: column;
-	gap: 6mm;
+@media screen, print {
+	.cv-work-experience .work-list {
+		display: flex;
+		flex-direction: column;
+		gap: 6mm;
+	}
 }

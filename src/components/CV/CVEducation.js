@@ -8,7 +8,7 @@ export default function CVEducation({ educationList }) {
 			<h3 className="cv-section-header">Education</h3>
 			<div className="education-list">
 				{educationList.map((education) => (
-					<CVEducationCard education={education} />
+					<CVEducationCard key={`cv-card-${education.id}`} education={education} />
 				))}
 			</div>
 		</div>

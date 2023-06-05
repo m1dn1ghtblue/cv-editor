@@ -1,31 +1,33 @@
-.skill-list {
-	flex-grow: 1;
-	display: flex;
-	flex-direction: column;
-	gap: 5mm;
-	padding-left: 10mm;
-	overflow-y: hidden;
-	margin-top: 10mm;
-}
+@media screen, print {
+	.skill-list {
+		flex-grow: 1;
+		display: flex;
+		flex-direction: column;
+		gap: 5mm;
+		padding-left: 10mm;
+		overflow-y: hidden;
+		margin-top: 10mm;
+	}
 
-.skill-list .skills-header {
-	text-transform: uppercase;
-	font-family: 'Open Sans', sans-serif;
-	letter-spacing: 0.1rem;
-}
+	.skill-list .skills-header {
+		text-transform: uppercase;
+		font-family: 'Open Sans', sans-serif;
+		letter-spacing: 0.1rem;
+	}
 
-.skill-list .skills-header::after {
-	margin-top: 2mm;
-	display: block;
-	content: '';
-	height: 3px;
-	width: calc(100%);
-	background-color: var(--color-cv-accent);
-}
+	.skill-list .skills-header::after {
+		margin-top: 2mm;
+		display: block;
+		content: '';
+		height: 3px;
+		width: calc(100%);
+		background-color: var(--color-cv-accent);
+	}
 
-.skill-list .skill {
-	background-color: var(--color-cv-gray);
-	padding: 3mm;
-	width: fit-content;
-	border-radius: 2mm;
+	.skill-list .skill {
+		background-color: var(--color-cv-gray);
+		padding: 3mm;
+		width: fit-content;
+		border-radius: 2mm;
+	}
 }

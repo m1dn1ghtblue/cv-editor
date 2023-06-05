@@ -9,8 +9,7 @@ function SkillsTabContent() {
 
 	const cards = skills.map((element) => (
 		<SkillCard
-			// TODO rename component keys
-			key={`skillCardKey_${element.id}`}
+			key={`form-skill-card-${element.id}`}
 			skill={element}
 			onDelete={() => {
 				deleteSkill(element.id);

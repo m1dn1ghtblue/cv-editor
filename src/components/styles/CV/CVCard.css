@@ -1,30 +1,32 @@
-.cv-card {
-	display: grid;
-	grid-template-columns: 36mm 1fr;
-	justify-content: start;
-	align-items: start;
-}
+@media screen, print {
+	.cv-card {
+		display: grid;
+		grid-template-columns: 36mm 1fr;
+		justify-content: start;
+		align-items: start;
+	}
 
-.cv-card .period {
-	font-family: 'Open Sans', sans-serif;
-	color: var(--color-cv-gray);
-}
+	.cv-card .period {
+		font-family: 'Open Sans', sans-serif;
+		color: var(--color-cv-gray);
+	}
 
-.cv-card .content {
-	display: flex;
-	flex-direction: column;
-	gap: 1mm;
-}
+	.cv-card .content {
+		display: flex;
+		flex-direction: column;
+		gap: 1mm;
+	}
 
-.cv-card .content .title {
-	text-transform: uppercase;
-	font-family: 'Open Sans', sans-serif;
-}
+	.cv-card .content .title {
+		text-transform: uppercase;
+		font-family: 'Open Sans', sans-serif;
+	}
 
-.cv-card .content .details {
-	color: var(--color-cv-gray);
-}
+	.cv-card .content .details {
+		color: var(--color-cv-gray);
+	}
 
-.cv-card .content .description {
-	margin-top: 2mm;
+	.cv-card .content .description {
+		margin-top: 2mm;
+	}
 }

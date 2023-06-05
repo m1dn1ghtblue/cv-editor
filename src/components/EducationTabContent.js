@@ -11,8 +11,7 @@ function EducationTabContent() {
 
 	const cards = education.map((element) => (
 		<EducationCard
-			// TODO rename component keys
-			key={`educationCardKey_${element.id}`}
+			key={`form-education-card-${element.id}`}
 			education={element}
 			onDelete={() => {
 				deleteEducation(element.id);

@@ -1,5 +1,7 @@
-.cv-education .education-list {
-	display: flex;
-	flex-direction: column;
-	gap: 6mm;
+@media screen, print {
+	.cv-education .education-list {
+		display: flex;
+		flex-direction: column;
+		gap: 6mm;
+	}
 }

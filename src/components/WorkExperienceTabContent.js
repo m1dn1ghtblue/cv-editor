@@ -11,8 +11,7 @@ function WorkExperienceTabContent() {
 
 	const cards = work.map((element) => (
 		<WorkExperienceCard
-			// TODO rename component keys
-			key={`workCardKey_${element.id}`}
+			key={`form-work-card-${element.id}`}
 			workExperience={element}
 			onDelete={() => {
 				deleteWork(element.id);
