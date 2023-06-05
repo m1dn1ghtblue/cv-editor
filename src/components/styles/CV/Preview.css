@@ -11,4 +11,25 @@
 		display: grid;
 		grid-template-columns: 70mm 140mm;
 	}
+
+	.preview .main-content {
+		display: flex;
+		flex-direction: column;
+		padding: 10mm;
+	}
+
+	.preview .cv-section-header {
+		color: var(--color-cv-gray);
+		font-family: 'Montserrat', sans-serif;
+		text-transform: uppercase;
+	}
+
+	.preview .cv-section-header::after {
+		content: '';
+		display: block;
+		width: 100%;
+		height: 3px;
+		background-color: var(--color-cv-accent);
+		margin: 3mm 0;
+	}
 }

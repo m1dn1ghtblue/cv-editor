@@ -15,7 +15,7 @@
 }
 
 .skill-list .skills-header::after {
-	margin-top: 1mm;
+	margin-top: 2mm;
 	display: block;
 	content: '';
 	height: 3px;

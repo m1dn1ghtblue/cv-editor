@@ -2,6 +2,6 @@
 
 .summary-input {
 	width: calc(max(70%, 300px));
-	max-width: 100%;
+	max-width: 600px;
 	min-height: 200px;
 }

@@ -2,9 +2,9 @@
 	.cv-header {
 		grid-column: 2 / 3;
 		background-color: var(--color-cv-accent);
-		margin-top: 21mm;
-		max-width: calc(100% - 20mm);
-		height: 51mm;
+		margin-top: 24mm;
+		max-width: calc(100%);
+		height: 45mm;
 
 		display: flex;
 		flex-direction: column;
