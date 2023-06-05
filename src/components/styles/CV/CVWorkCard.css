@@ -1,0 +1,30 @@
+.cv-work-card {
+	display: grid;
+	grid-template-columns: 36mm 1fr;
+	justify-content: start;
+	align-items: start;
+}
+
+.cv-work-card .period {
+	font-family: 'Open Sans', sans-serif;
+	color: var(--color-cv-gray);
+}
+
+.cv-work-card .content {
+	display: flex;
+	flex-direction: column;
+	gap: 1mm;
+}
+
+.cv-work-card .content .job-title {
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.cv-work-card .content .details {
+	color: var(--color-cv-gray);
+}
+
+.cv-work-card .content .description {
+	margin-top: 2mm;
+}

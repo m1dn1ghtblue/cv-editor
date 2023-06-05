@@ -4,6 +4,7 @@ import CVContext from '../../CVContext';
 import CVSidebar from './CVSidebar';
 import CVHeader from './CVHeader';
 import CVSummary from './CVSummary';
+import CVWorkExperience from './CVWorkExperience';
 
 function Preview() {
 	const { personal, education, work, skills, summary, photoUrl } = useContext(CVContext);
@@ -13,7 +14,10 @@ function Preview() {
 			<CVSidebar />
 			<div>
 				<CVHeader />
-				<div className="main-content">{summary.length > 0 && <CVSummary text={summary} />}</div>
+				<div className="main-content">
+					{summary.length > 0 && <CVSummary text={summary} />}
+					{work.length > 0 && <CVWorkExperience workList={work} />}
+				</div>
 			</div>
 		</div>
 	);

@@ -15,7 +15,10 @@
 	.preview .main-content {
 		display: flex;
 		flex-direction: column;
+		gap: 10mm;
+
 		padding: 10mm;
+		color: var(--color-cv-black);
 	}
 
 	.preview .cv-section-header {
