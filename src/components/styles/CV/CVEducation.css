@@ -1,0 +1,5 @@
+.cv-education .education-list {
+	display: flex;
+	flex-direction: column;
+	gap: 6mm;
+}
