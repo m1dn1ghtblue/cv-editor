@@ -8,7 +8,7 @@ import CVWorkExperience from './CVWorkExperience';
 import CVEducation from './CVEducation';
 
 function Preview() {
-	const { personal, education, work, skills, summary, photoUrl } = useContext(CVContext);
+	const { education, work, summary } = useContext(CVContext);
 
 	return (
 		<div className="preview" id="CV-preview">

@@ -3,12 +3,20 @@ form.work-form {
 	grid-template-areas:
 		'title title employer employer'
 		'location location start-date end-date'
+		'description description . .'
 		'. . add-btn add-btn';
 }
 
 form.work-form button {
 	grid-area: add-btn;
 	justify-self: center;
+}
+
+#work-description-input {
+	width: 100%;
+	padding: 1rem;
+	height: 4rem;
+	max-width: 200%;
 }
 
 #work-title {
@@ -29,4 +37,8 @@ form.work-form button {
 
 #work-end-date {
 	grid-area: end-date;
+}
+
+#work-description {
+	grid-area: description;
 }

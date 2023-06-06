@@ -1,6 +1,7 @@
 .tab-content {
 	height: max-content;
 	padding: 36px;
+	color: var(--color-black);
 }
 
 .tab-content form {
@@ -13,14 +14,20 @@
 }
 
 .tab-content form button {
-	border: 1px solid black;
-	background-color: aquamarine;
-	height: 2rem;
+	border: none;
+	border-radius: 4px;
+	box-shadow: -1px 5px 10px 0px rgba(0, 0, 0, 0.31);
+	background-color: var(--color-black);
+	height: 3rem;
 	width: 200px;
+	font-size: 1rem;
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+	transition: all 0.2s ease-in-out;
 }
 
 .tab-content form button:hover {
-	background-color: aliceblue;
+	background-color: var(--color-accent);
 	cursor: pointer;
 }
 
@@ -31,23 +38,51 @@
 	flex-direction: column;
 	gap: 12px;
 	align-items: flex-start;
+	font-family: 'Open Sans', sans-serif;
+	color: var(--color-gray);
 }
 
 .tab-content form label label {
 	flex-direction: row;
+	align-items: center;
 }
 
 .tab-content form label input {
-	border: 1px solid black;
-	background-color: aliceblue;
-	padding: 0 0.5rem;
-	height: 2rem;
+	padding: 0.3rem 0.5rem;
 	width: calc(max(100% - 1rem, 80px));
+}
+
+.tab-content form label input,
+.tab-content form label textarea {
+	font-size: 1rem;
+	border: 1px solid var(--color-black);
+	border-radius: 4px;
+	background-color: white;
+	color: var(--color-black);
+	outline: 2px solid transparent;
+	transition: border 0.15s ease-in-out, outline 0.15s ease-in-out;
+	font-family: sans-serif;
+}
+
+.tab-content form label input:focus,
+.tab-content form label textarea:focus {
+	outline: 2px solid var(--color-accent);
+	border-color: var(--color-accent);
+}
+
+.tab-content form label input:disabled {
+	border-color: var(--color-light);
+	background-color: var(--color-light);
+	color: var(--color-gray);
 }
 
 .tab-content form label input[type='checkbox'] {
 	width: 18px;
-	accent-color: lightblue;
+	accent-color: var(--color-accent);
 	height: 18px;
 	cursor: pointer;
+}
+
+.tab-content form label input[type='checkbox']:focus {
+	outline: none;
 }

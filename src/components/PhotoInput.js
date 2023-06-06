@@ -11,13 +11,14 @@ function PhotoInput() {
 
 	return (
 		<div className="photo-input">
-			{photoUrl == null ? <p>Upload photo</p> : <img className="photo-preview" src={photoUrl} alt="" />}
+			<h4>Upload your photo</h4>
 			<input
 				type="file"
 				multiple={false}
 				accept="image/jpeg, image/png, image/jpg"
 				onChange={(e) => onUpload(e.target.files[0])}
 			></input>
+			<img className="photo-preview" src={photoUrl} alt="" />
 		</div>
 	);
 }
