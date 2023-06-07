@@ -1,1 +1,21 @@
 @import './Card.css';
+
+.education-card {
+	grid-template-columns: 1fr min-content;
+}
+
+.education-card .content {
+	grid-column: 1/2;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.education-card .buttons {
+	grid-column: 2/3;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	height: 100%;
+	justify-content: space-evenly;
+}

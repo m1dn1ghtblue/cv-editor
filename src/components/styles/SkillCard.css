@@ -1,6 +1,20 @@
 .skill-card {
-	width: calc(100% - 2 * 24px);
 	padding: 12px 24px;
+	width: calc(100% - 48px);
 	display: flex;
+	border-radius: 8px;
 	justify-content: space-between;
+	align-items: center;
+	background-color: var(--color-black);
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.skill-card button {
+	background-color: var(--color-gray);
+	padding: 6px 12px;
+}
+
+.skill-card button:hover {
+	background-color: var(--color-accent);
 }

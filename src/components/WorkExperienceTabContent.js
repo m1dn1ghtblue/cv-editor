@@ -23,7 +23,7 @@ function WorkExperienceTabContent() {
 	));
 
 	return (
-		<div className="tab-content">
+		<div className="tab-content work-tab">
 			<WorkExperienceForm
 				currentWork={currentWork}
 				setCurrentWork={setCurrentWork}

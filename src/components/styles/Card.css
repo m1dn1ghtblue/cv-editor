@@ -1,5 +1,38 @@
 .card {
-	/* change to grid */
+	display: grid;
+	grid-template-columns: 1fr min-content;
+	gap: 8px;
+	border-radius: 8px;
+	box-shadow: -1px 5px 10px 0px rgba(0, 0, 0, 0.31);
+	padding: 24px;
+	width: calc(100% - 48px);
+	height: max-content;
+	background-color: var(--color-black);
+	color: white;
+}
+
+.card .content {
+	grid-column: 1/2;
 	display: flex;
 	flex-direction: column;
+	gap: 8px;
+}
+
+.card .buttons {
+	grid-column: 2/3;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	height: 100%;
+	justify-content: center;
+}
+
+.card button {
+	width: 80px;
+	background-color: var(--color-gray);
+	padding: 4px;
+}
+
+.card button:hover {
+	background-color: var(--color-accent);
 }

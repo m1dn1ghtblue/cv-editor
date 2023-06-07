@@ -7,10 +7,11 @@
 }
 
 .skills-tab .skill-list {
-	width: 100%;
+	width: calc(100% - 48px);
 	display: flex;
 	flex-direction: column;
 	gap: 12px;
+	padding: 0 24px;
 }
 
 @media screen and (max-width: 800px) {

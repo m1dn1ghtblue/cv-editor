@@ -1,1 +1,8 @@
 @import './TabContent.css';
+
+.work-tab {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 36px;
+}
