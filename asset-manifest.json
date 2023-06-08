@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/m1dn1ghtblue/cv-editor/static/css/main.02f246c3.css",
+    "main.js": "/m1dn1ghtblue/cv-editor/static/js/main.7a355483.js",
+    "static/media/placeholder.jpg": "/m1dn1ghtblue/cv-editor/static/media/placeholder.f2ab624fe69890ed970b.jpg",
+    "index.html": "/m1dn1ghtblue/cv-editor/index.html",
+    "main.02f246c3.css.map": "/m1dn1ghtblue/cv-editor/static/css/main.02f246c3.css.map",
+    "main.7a355483.js.map": "/m1dn1ghtblue/cv-editor/static/js/main.7a355483.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.02f246c3.css",
+    "static/js/main.7a355483.js"
+  ]
+}
