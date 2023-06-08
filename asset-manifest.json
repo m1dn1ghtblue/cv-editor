@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/m1dn1ghtblue/cv-editor/static/css/main.02f246c3.css",
-    "main.js": "/m1dn1ghtblue/cv-editor/static/js/main.7a355483.js",
-    "static/media/placeholder.jpg": "/m1dn1ghtblue/cv-editor/static/media/placeholder.f2ab624fe69890ed970b.jpg",
-    "index.html": "/m1dn1ghtblue/cv-editor/index.html",
-    "main.02f246c3.css.map": "/m1dn1ghtblue/cv-editor/static/css/main.02f246c3.css.map",
-    "main.7a355483.js.map": "/m1dn1ghtblue/cv-editor/static/js/main.7a355483.js.map"
+    "main.css": "/cv-editor/static/css/main.02f246c3.css",
+    "main.js": "/cv-editor/static/js/main.2782e8c3.js",
+    "static/media/placeholder.jpg": "/cv-editor/static/media/placeholder.f2ab624fe69890ed970b.jpg",
+    "index.html": "/cv-editor/index.html",
+    "main.02f246c3.css.map": "/cv-editor/static/css/main.02f246c3.css.map",
+    "main.2782e8c3.js.map": "/cv-editor/static/js/main.2782e8c3.js.map"
   },
   "entrypoints": [
     "static/css/main.02f246c3.css",
-    "static/js/main.7a355483.js"
+    "static/js/main.2782e8c3.js"
   ]
 }
